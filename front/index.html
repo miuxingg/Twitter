@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel = "stylesheet" href="base.css">
+    <link rel = "stylesheet" href="header.css">
+    <link rel = "stylesheet" href="form.css">
+    <link rel = "stylesheet" href="post.css">
+    <link rel = "stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">Twitter</div>
+            <ul class="nav">
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Register</a>
+                </li>
+                <li>
+                    <a href="#">Sign out</a>
+                </li>
+                <li>
+                    <a href="#">Hello, Thanh Binh</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="container">
+            <textarea
+            type = "text" 
+            class="content"
+            name="content"
+            placeholder="What's happening?"
+        ></textarea><br>
+        <button class="btn bull-right" type="submit">Tweet</button>
+        </div>
+    </div>
+
+    <!-- POST -->
+    <div class="post">
+        <div class="container">
+            <div class="post-list">
+                <div class="post-item">
+                    <p class="post-content">Content</p>
+                    <div class="post-footer">
+                        <span>By: Thanh Bình</span>
+                        <span>Date: 27/05/2000</span>
+                        <div class="post-edit-delete">
+                            <span>Edit</span>
+                            <span>Delete</span>
+                            <span>Are you sure?</span>
+                            <span>Yes</span>
+                            <span>No</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-edit-form">
+                    <textarea
+                        type = "text" 
+                        class="content"
+                        name="content"
+                        placeholder="What's happening?"
+                    ></textarea><br>
+                    <button class="btn bull-right ml-5" type="submit">Cancel</button>
+                    <button class="btn bull-right mr-5" type="submit">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <div class="auth-login">
+        <div class="container">
+            <form class="login">
+                <h2>Enter Your account</h2>
+                <span class="error">Error: Your password is not correct</span>
+                <input type="text" class="input-text" placeholder="Email"/>
+                <input type="password" class="input-text" placeholder="Password"/>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register -->
+    <div class="auth-login">
+        <div class="container">
+            <form class="login">
+                <h2>Enter Your account</h2>
+                <span class="error">Error: Your password is not correct</span>
+                <input type="text" class="input-text" placeholder="Name"/>
+                <input type="text" class="input-text" placeholder="Email"/>
+                <input type="password" class="input-text" placeholder="Password"/>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
